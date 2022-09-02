@@ -118,13 +118,8 @@
   border: 0;
 }
 
-@media only screen and (max-width: 900px) {
-  .chatList {
-    flex: 1;
-    background-color: black;
-    padding: 0;
-    color: azure;
-    overflow-y: scroll;
-    max-height: calc(100vh - 80px);
+@media (max-width: 450px) {
+  .userList {
+    width: 100px;
   }
 }
