@@ -1,4 +1,4 @@
-const { disconnect } = require("process");
+
 
 const socket = io();
 
@@ -20,8 +20,8 @@ function renderUserList() {
 
     userList.forEach(i => {
         ul.innerHTML += '<li>'+i+'</li>';
-    })
-}
+    });
+};
 
 function addMessage(type, user, msg) {
     let ul = document.querySelector('.chatList');
@@ -43,7 +43,7 @@ function addMessage(type, user, msg) {
     };
 
     ul.scrollTop = ul.scrollHeight;
-}
+};
 
 loginInput.addEventListener('keyup', (e) => {
     if(e.keyCode === 13) {
